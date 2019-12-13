@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+    <!-- Bootstrap css and jquery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body background="assets/images/escheresque_ste.png" class="text-light">
+
+    <div class="container fluid mx-auto mt-3">
+        <!-- Row for title  -->
+        <div class="row mx-auto mt-3">
+            <h1 class="mx-auto">Crystal Collector</h1>
+        </div>
+
+        <!-- Row for description  -->
+        <div class="row mx-auto mt-3">
+            <p class="mx-auto">Click on a crystal to add its value to your score.
+                <br>
+                Try to match your score with the number displayed.
+                <br>
+                Each crystal has a hidden value, so click to find out!
+                <br>
+                If you go too high you'll lose and have to try again.
+            </p>
+        </div>
+
+        <!-- Row for goal, score, wins/losses  -->
+        <div class="row mx-auto mt-3">
+            <div class="col-sm-3 ml-auto"><h3 id="points-goal">Goal: </h3></div>
+            <div class="col-sm-5"><h3 id="player-score">Your score:  </h3></div>
+            <div class="col-sm-2 mr-auto"><h4>
+                <p id="wins">Wins: 0</p>
+                <p id="losses">Losses: 0</p>
+                </h4>
+            </div>
+        </div>
+
+        <!-- Row for crystals  -->
+        <div class="row mx-auto mt-3" id="crystal-gems">
+            <div class="col-md-2 ml-auto mr-3 my-1">
+                <img src="assets/images/bluegem.png" alt="blue" id="blue-gem" style="height: 150px; width: 150px;">
+            </div>
+            <div class="col-md-2 ml-1 my-1">
+                <img src="assets/images/redgem.png" alt="red" id="red-gem" style="height: 150px; width: 150px;">
+            </div>
+            <div class="col-md-2 mx-1 my-1">
+                <img src="assets/images/greengem.png" alt="green" id="green-gem" style="height: 150px; width: 150px;">
+            </div>
+            <div class="col-md-2 mr-auto ml-1 my-1">
+                <img src="assets/images/purplegem.png" alt="purple" id="purple-gem"
+                    style="height: 150px; width: 150px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to script -->
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
